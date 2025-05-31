@@ -8,6 +8,7 @@ const axios = require("axios");
 const path = require("path");
 
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: true });
+console.log("✅ Бот запущен. Жду команды...");
 
 bot.onText(/\/start/, (msg) => {
   bot.sendMessage(
